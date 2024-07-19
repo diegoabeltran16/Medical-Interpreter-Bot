@@ -162,7 +162,6 @@ User Input: User sends a message to the bot. > Bot Processing: Bot processes the
 ##### Project Structure
 
 ``
-
  medical_interpreter_bot/
  ├── bot.py                  # Main bot script
  ├── database.py             # Database interaction script
@@ -182,9 +181,7 @@ User Input: User sends a message to the bot. > Bot Processing: Bot processes the
 A simple text-based interface with natural language input and bot responses.
 
 Interaction Example:
-
 ``
-
  User: "I am in a cardiology consultation. Can you give me some general terms?"
  Bot: "Common terms in Cardiology: Arrhythmia: An irregular heartbeat. Bradycardia: A slower than normal heart rate. Myocardial Infarction: A heart attack."
  User: "I just came across a term: Tachycardia. It means a faster than normal heart rate."
