@@ -1,0 +1,7 @@
+discord.py
+pandas
+scikit-learn
+schedule
+spacy
+transformers
+python-dotenv
