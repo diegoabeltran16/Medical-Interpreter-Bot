@@ -5,3 +5,4 @@ schedule
 spacy
 transformers
 python-dotenv
+openai
