@@ -659,193 +659,34 @@ Final Product:
 ## Project structure
 ```
 Medical-Interpreter-Bot/
-├── cycle_1_foundation/
-│   ├── alpha_1_1/
-│   │   ├── bot.py
-│   │   ├── database.py
-│   │   ├── nlu_model.py
-│   │   ├── main.py
-│   │   ├── tests/
-│   │   │   ├── test_bot.py
-│   │   │   ├── test_database.py
-│   │   │   └── test_nlu_model.py
-│   │   ├── data/
-│   │   │   ├── medical_terms.db
-│   │   │   ├── terms.csv
-│   │   ├── .env
-│   │   ├── .gitignore
-│   │   ├── README.md
-│   │   ├── requirements.txt
-│   │   └── LICENSE
-│   └── beta_1_2/
-│       ├── bot.py
-│       ├── database.py
-│       ├── nlu_model.py
-│       ├── main.py
-│       ├── term_management.py
-│       ├── tests/
-│       │   ├── test_bot.py
-│       │   ├── test_database.py
-│       │   └── test_nlu_model.py
-│       ├── data/
-│       │   ├── medical_terms.db
-│       │   ├── terms.csv
-│       ├── .env
-│       ├── .gitignore
-│       ├── README.md
-│       ├── requirements.txt
-│       └── LICENSE
-├── cycle_2_advanced/
-│   ├── alpha_2_1/
-│   │   ├── bot.py
-│   │   ├── database.py
-│   │   ├── nlu_model.py
-│   │   ├── main.py
-│   │   ├── term_management.py
-│   │   ├── export_results.py
-│   │   ├── tests/
-│   │   │   ├── test_bot.py
-│   │   │   ├── test_database.py
-│   │   │   └── test_nlu_model.py
-│   │   ├── data/
-│   │   │   ├── medical_terms.db
-│   │   │   ├── terms.csv
-│   │   ├── .env
-│   │   ├── .gitignore
-│   │   ├── README.md
-│   │   ├── requirements.txt
-│   │   └── LICENSE
-│   └── beta_2_2/
-│       ├── bot.py
-│       ├── database.py
-│       ├── nlu_model.py
-│       ├── main.py
-│       ├── term_management.py
-│       ├── generative_ai.py
-│       ├── export_results.py
-│       ├── tests/
-│       │   ├── test_bot.py
-│       │   ├── test_database.py
-│       │   ├── test_nlu_model.py
-│       │   └── test_generative_ai.py
-│       ├── data/
-│       │   ├── medical_terms.db
-│       │   ├── terms.csv
-│       ├── .env
-│       ├── .gitignore
-│       ├── README.md
-│       ├── requirements.txt
-│       └── LICENSE
-├── cycle_3_prediction/
-│   ├── alpha_3_1/
-│   │   ├── bot.py
-│   │   ├── database.py
-│   │   ├── nlu_model.py
-│   │   ├── main.py
-│   │   ├── term_management.py
-│   │   ├── specialty_prediction.py
-│   │   ├── tests/
-│   │   │   ├── test_bot.py
-│   │   │   ├── test_database.py
-│   │   │   └── test_specialty_prediction.py
-│   │   ├── data/
-│   │   │   ├── medical_terms.db
-│   │   │   ├── terms.csv
-│   │   ├── .env
-│   │   ├── .gitignore
-│   │   ├── README.md
-│   │   ├── requirements.txt
-│   │   └── LICENSE
-│   └── beta_3_2/
-│       ├── bot.py
-│       ├── database.py
-│       ├── nlu_model.py
-│       ├── main.py
-│       ├── term_management.py
-│       ├── specialty_prediction.py
-│       ├── tests/
-│       │   ├── test_bot.py
-│       │   ├── test_database.py
-│       │   ├── test_nlu_model.py
-│       │   └── test_specialty_prediction.py
-│       ├── data/
-│       │   ├── medical_terms.db
-│       │   ├── terms.csv
-│       ├── .env
-│       ├── .gitignore
-│       ├── README.md
-│       ├── requirements.txt
-│       └── LICENSE
-├── cycle_4_final/
-│   ├── alpha_4_1/
-│   │   ├── bot.py
-│   │   ├── database.py
-│   │   ├── nlu_model.py
-│   │   ├── main.py
-│   │   ├── term_management.py
-│   │   ├── full_integration.py
-│   │   ├── tests/
-│   │   │   ├── test_bot.py
-│   │   │   ├── test_database.py
-│   │   │   └── test_full_integration.py
-│   │   ├── data/
-│   │   │   ├── medical_terms.db
-│   │   │   ├── terms.csv
-│   │   ├── .env
-│   │   ├── .gitignore
-│   │   ├── README.md
-│   │   ├── requirements.txt
-│   │   └── LICENSE
-│   └── beta_4_2/
-│       ├── bot.py
-│       ├── database.py
-│       ├── nlu_model.py
-│       ├── main.py
-│       ├── term_management.py
-│       ├── full_integration.py
-│       ├── tests/
-│       │   ├── test_bot.py
-│       │   ├── test_database.py
-│       │   └── test_full_integration.py
-│       ├── data/
-│       │   ├── medical_terms.db
-│       │   ├── terms.csv
-│       ├── .env
-│       ├── .gitignore
-│       ├── README.md
-│       ├── requirements.txt
-│       └── LICENSE
-├── docs/
-│   ├── README.md
-│   ├── user_guide.md
-│   ├── developer_guide.md
-│   └── CHANGELOG.md
+├── src/
+│   ├── bot.py
+│   ├── database.py
+│   ├── nlu_model.py
+│   ├── term_management.py
+│   ├── main.py
+├── tests/
+│   ├── test_bot.py
+│   ├── test_database.py
+│   ├── test_nlu_model.py
+│   ├── test_term_management.py
+├── data/
+│   ├── medical_terms.db
+│   ├── terms.csv
+├── .env
+├── .gitignore
+├── .gitlab-ci.yml
+├── README.md
+├── requirements.txt
 └── LICENSE
 
 ```
 
-- data/: Contains the SQLite database and CSV files with medical terms.
-medical_terms.db: The main database for storing medical terms.
-terms.csv: A CSV file containing a list of medical terms and definitions.
-- venv/: The virtual environment directory containing all the project dependencies.
-- .env: Environment variables file containing sensitive information like API keys and database URLs.
-- .gitignore: Specifies files and directories to be ignored by Git.
-- .gitlab-ci.yml: Configuration file for GitLab CI/CD pipelines.
-- bot.py: Main entry point for the bot.
-- database.py: Manages database interactions using SQLAlchemy or direct SQLite operations.
-- nlu_model.py: Contains the implementation of the natural language understanding model using spaCy or transformers.
-- project-details.md: Detailed documentation of the project, including scope, objectives, requirements, and development plans.
-- README.md: Provides an overview of the project, how to set it up, and how to use it.
-- requirements.txt: Lists the Python dependencies required for the project.
-- sync_repos.sh: A script to synchronize repositories, useful for keeping the project up-to-date with remote changes.
-- test_openai.py: A script to test OpenAI integration, ensuring that the generative AI components work correctly.
-- update_script.py: A script to handle automated updates and maintenance tasks.
-- Cycle Folders (cycle_1_foundation, cycle_2_advanced, etc.): Each cycle contains its own set of subfolders for alpha and beta prototypes, allowing incremental development and testing.
-- Alpha and Beta Prototypes (alpha_1_1, beta_1_2, etc.): Separate folders for each prototype stage within a cycle, keeping versions distinct and tracking progress.
-- Modules (main.py, term_query.py, etc.): Core functionality files, organized by feature (term query, term management, NLU integration, etc.).
-- Tests (tests/): Unit tests for each module, ensuring code reliability and facilitating testing at each stage.
-- Documentation (docs/): Comprehensive project documentation, including README, user guide, developer guide, and changelog.
-- Requirements (requirements.txt): Dependencies for each prototype stage, ensuring a consistent development environment.
+bot.py: Manages Discord bot interactions and command handling.
+database.py: Handles all database operations using SQLAlchemy or direct SQLite interactions.
+nlu_model.py: Implements the natural language understanding model using spaCy or transformers.
+term_management.py: Manages term additions, updates, and deletions.
+main.py: The entry point for running the bot and integrating all modules.
 
 ## Git
 Git Run Commit script: ./sync_repos.sh
