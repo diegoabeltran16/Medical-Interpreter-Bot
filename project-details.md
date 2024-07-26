@@ -470,6 +470,11 @@ def get_term(term):
 Develop the Medical Interpreter Bot project using a transformative approach inspired by the Yin-Yang concept, structuring the development in cycles of pre-co-requisite programming blocks, moving from the simplest to the most complex. Here’s a structured development plan divided into Alpha and Beta prototypes, each building upon the previous cycle.
 Structuring the development in cycles and using Git branches, you can ensure that each phase is developed and tested independently before being merged into the main branch. This approach minimizes redundancy, ensures continuous integration, and facilitates incremental improvements. Each cycle builds upon the previous one, resulting in a robust, scalable, and user-friendly Medical Interpreter Bot.
 
+**Why Use Branches?**
+- Isolation: Branches allow you to work on features or fixes in isolation from the main codebase.
+- Collaboration: Multiple developers can work on different features simultaneously without interfering with each other.
+- Experimentation: You can create experimental branches to try out new ideas without affecting the stable code.
+
 **Cycle 1: Foundation and Basic Features | Alpha Prototype 1.1: Initial Setup and Basic Input**
 
 **Tasks**
@@ -521,6 +526,8 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - NLU Integration: The bot can recognize basic medical terms using spaCy or transformers.
 - User Input Analysis: The bot can analyze user inputs to identify new terms and update the database.
 - Basic Testing and Feedback: Initial unit tests for core functionalities and user feedback gathered to improve input handling.
+
+
 
 - **Cycle 2: Advanced Features and NLU Integration | Alpha Prototype 2.1: Advanced NLU and User Input Analysis**
 
@@ -749,8 +756,9 @@ MEDICAL-INTERPRETER-BOT/
 
 - sync_repos.sh: Use for full repository syncs.
 - sync_branch.sh: Use for syncing individual branches.
-- sync_feature.sh: (Optional) Use for syncing all feature branches.
-- sync_hotfix.sh: (Optional) Use for syncing all hotfix branches.
+- sync_feature.sh: Use for syncing all feature branches.
+- sync_hotfix.sh: Use for syncing all hotfix branches.
+- merge_features.sh: Use for merging features in main
 
 The provided scripts incorporate good practices, including error handling, debugging output, and clear messaging.
 
@@ -801,6 +809,9 @@ sync_feature.sh
 sync_hotfix.sh
 
 ```
+
+./merge_features.sh
+
 
 **Advantages of Using Separate Scripts**
 - Modularity: Each script handles a specific task, making the code easier to understand and maintain.

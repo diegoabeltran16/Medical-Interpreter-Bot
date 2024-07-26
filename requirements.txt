@@ -6,3 +6,4 @@ spacy
 transformers
 python-dotenv
 openai
+flake8
