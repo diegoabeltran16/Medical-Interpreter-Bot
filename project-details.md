@@ -467,16 +467,18 @@ def get_term(term):
 ```
 
 ## Plan for development 
-Develop the Medical Interpreter Bot project using a transformative approach inspired by the Yin-Yang concept, structuring the development in cycles of pre-co-requisite programming blocks, moving from the simplest to the most complex. Here’s a structured development plan divided into Alpha and Beta prototypes, each building upon the previous cycle.
-Structuring the development in cycles and using Git branches, you can ensure that each phase is developed and tested independently before being merged into the main branch. This approach minimizes redundancy, ensures continuous integration, and facilitates incremental improvements. Each cycle builds upon the previous one, resulting in a robust, scalable, and user-friendly Medical Interpreter Bot.
+We are going to use a transformative approach inspired by the Yin-Yang concept, structuring the development in cycles of pre-co-requisite programming blocks, moving from the simplest to the most complex. 
+For doing this we will be structuring the development in cycles and using Git branches, we can ensure that each phase is developed and tested independently before being merged into the main branch. This approach minimizes redundancy, ensures continuous integration, and facilitates incremental improvements. Each cycle builds upon the previous one, resulting in a robust, scalable, and user-friendly Medical Interpreter Bot.
 
 **Why Use Branches?**
-- Isolation: Branches allow you to work on features or fixes in isolation from the main codebase.
-- Collaboration: Multiple developers can work on different features simultaneously without interfering with each other.
-- Experimentation: You can create experimental branches to try out new ideas without affecting the stable code.
+- **Isolation:** Branches allow you to work on features or fixes in isolation from the main codebase.
+- **Collaboration:** Multiple developers can work on different features simultaneously without interfering with each other.
+- **Experimentation:** You can create experimental branches to try out new ideas without affecting the stable code.
 
-**Cycle 1: Foundation and Basic Features | Alpha Prototype 1.1: Initial Setup and Basic Input**
+Here’s a structured development plan divided into Alpha and Beta prototypes, each building upon the previous cycle.
 
+### Cycle 1
+**Foundation and Basic Features | Alpha Prototype 1.1: Initial Setup and Basic Input**
 **Tasks**
 - Set up the development environment.
 - Create a basic Python project structure.
@@ -502,7 +504,7 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Database Setup: An SQLite database initialized with a basic schema for storing medical terms and definitions.
 - Basic Command Handling: The bot can respond to simple user queries with predefined responses.
 
-**Cycle 1: Foundation and Basic Features | Beta Prototype 1.2: Basic Term and Definition Management**
+**Foundation and Basic Features | Beta Prototype 1.2: Basic Term and Definition Management**
 
 **Tasks**
 - Extend querying functionality to include English-Spanish translations.
@@ -527,9 +529,16 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - User Input Analysis: The bot can analyze user inputs to identify new terms and update the database.
 - Basic Testing and Feedback: Initial unit tests for core functionalities and user feedback gathered to improve input handling.
 
+**Core Functionality and Setup**
+**Branch:** feature/cycle-1-setup
+**Sub-branches:**
+- feature/bot-initialization
+- feature/database-setup
+- feature/basic-term-lookup
+- feature/env-configuration
 
-
-- **Cycle 2: Advanced Features and NLU Integration | Alpha Prototype 2.1: Advanced NLU and User Input Analysis**
+### Cycle 2
+**Advanced Features and NLU Integration | Alpha Prototype 2.1: Advanced NLU and User Input Analysis**
 
 **Tasks**
 - Implement spaCy for advanced natural language understanding (NLU).
@@ -550,7 +559,7 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Enhanced User Interface: Better user interaction within Discord, making it easier to query and receive definitions.
 - Automated Updates: Basic scripts for automated updates to the database with new terms and definitions.
 
-**Cycle 2: Advanced Features and NLU Integration | Beta Prototype 2.2: Generative AI Capabilities**
+**Advanced Features and NLU Integration | Beta Prototype 2.2: Generative AI Capabilities**
 
 **Tasks**
 - Implement transformers for generating definitions and explanations.
@@ -575,7 +584,15 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Enhanced Database Management: Efficient and reliable database operations with automated updates.
 - Advanced Testing and User Feedback: Integration tests for new functionalities and broader user feedback gathered to refine features.
 
-**Cycle 3: Specialty Prediction and User Experience Enhancements | Alpha Prototype 3.1: Specialty Prediction Model**
+**Advanced Natural Language Understanding (NLU)**
+**Branch:** feature/cycle-2-nlu
+**Sub-branches**
+- feature/nlu-integration
+- feature/data-manipulation
+- feature/specialty-specific-terms
+
+### Cycle 3
+**Specialty Prediction and User Experience Enhancements | Alpha Prototype 3.1: Specialty Prediction Model**
 
 **Tasks**
 - Develop and train models using scikit-learn to predict relevant medical specialties based on user queries.
@@ -596,7 +613,7 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Improved User Experience: More intuitive and consistent interactions, providing clear and concise responses.
 - Security Enhancements: Initial implementation of security measures for data handling and storage.
 
-**Cycle 3: Specialty Prediction and User Experience Enhancements | Beta Prototype 3.2: Enhanced User Experience and Security**
+**Specialty Prediction and User Experience Enhancements | Beta Prototype 3.2: Enhanced User Experience and Security**
 
 **Tasks**
 - Design intuitive and consistent interactions within Discord.
@@ -621,7 +638,15 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Optimized Performance: The bot can handle multiple queries simultaneously without performance degradation.
 - Comprehensive Testing: Thorough testing of all features, including performance and security.
 
-**Cycle 4: Comprehensive Testing and Finalization | Alpha Prototype 4.1: Comprehensive Testing**
+**Generative AI and Machine Learning Enhancements**
+**Branch:** feature/cycle-3-ml-ai
+**Sub-branches:**
+- feature/ml-models
+- feature/generative-ai
+- feature/automatic-analysis
+
+## Cycle 4
+**Comprehensive Testing and Finalization | Alpha Prototype 4.1: Comprehensive Testing**
 
 **Tasks**
 - Conduct thorough testing of all features (unit tests, integration tests).
@@ -642,7 +667,7 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Comprehensive Documentation: Detailed documentation including setup guides, user manuals, and developer notes.
 - Final Adjustments: Implemented changes based on testing results and user feedback.
 
-**Cycle 4: Comprehensive Testing and Finalization | Beta Prototype 4.2: Finalization and Deployment**
+**Comprehensive Testing and Finalization | Beta Prototype 4.2: Finalization and Deployment**
 
 **Tasks**
 - Finalize UI/UX based on comprehensive feedback.
@@ -666,6 +691,13 @@ Structuring the development in cycles and using Git branches, you can ensure tha
 - Market-Ready Bot: Fully functional and optimized bot ready for deployment to a production environment.
 - Market Launch: The bot is officially launched to the target market, and user adoption is monitored.
 - Market Validation: Initial analysis of user adoption and feedback to assess market viability and plan for future improvements.
+
+**User Experience and Expansion**
+**Branch:** feature/cycle-4-user-experience
+**Sub-branches:**
+- feature/user-friendly-interface
+- feature/database-expansion
+- feature/scalability-maintenance
 
 ## Project structure
 ```
@@ -762,58 +794,58 @@ MEDICAL-INTERPRETER-BOT/
 
 The provided scripts incorporate good practices, including error handling, debugging output, and clear messaging.
 
-**When to Use Each Script**
-
+### **When to Use Each Script**
 **sync_repos.sh**
-- Purpose: Orchestrates the syncing of all branches listed in the script.
-- Use Case: Run this script when you want to perform a full sync of all relevant branches (main, develop, feature branches, etc.) between GitHub and GitLab.
-- Frequency: Use this regularly, such as at the end of each development cycle or before major releases.
-- Comand
-
+- **Purpose:** Orchestrates the syncing of all branches listed in the script.
+- **Use Case:** Run this script when you want to perform a full sync of all relevant branches (main, develop, feature branches, etc.) between GitHub and GitLab.
+- **Frequency:** Use this regularly, such as at the end of each development cycle or before major releases.
+- **Comand:**
 ```
 ./sync_repos.sh
 
 ```
-
 **sync_branch.sh**
-- Purpose: Syncs a single specified branch.
-- Use Case: Use this script when you need to sync a specific branch, for example, if you’ve made changes to one particular branch and want to ensure it’s up-to-date across both repositories.
-- Frequency: Use as needed, particularly when working on or updating specific branches.
-- Comand
+- **Purpose:** Syncs a single specified branch.
+- **Use Case:** Use this script when you need to sync a specific branch, for example, if you’ve made changes to one particular branch and want to ensure it’s up-to-date across both repositories.
+- **Frequency:** Use as needed, particularly when working on or updating specific branches.
+- **Comand**
+```
+./sync_branch.sh <branch-name>
+
+ej. --- ./sync_branch.sh feature/add-new-functionality
 
 ```
-sync_branch.sh <branch-name>
-
-ej. --- sync_branch.sh feature/add-new-functionality
-
-```
-
 **sync_feature.sh**
-- Purpose: Syncs all feature branches.
-- Use Case: Use this script when you want to focus on syncing all your feature branches separately from main and develop branches.
-- Frequency: Use this periodically, especially during active feature development.
-- Comand
+- **Purpose:** Syncs all feature branches.
+- **Use Case:** Use this script when you want to focus on syncing all your feature branches separately from main and develop branches.
+- **Frequency:** Use this periodically, especially during active feature development.
+- **Comand**
+```
+./sync_feature.sh
 
 ```
-sync_feature.sh
-
-```
-
 **sync_hotfix.sh**
-- Purpose: Syncs all hotfix branches.
-- Use Case: Use this script when you want to ensure hotfix branches are quickly synced due to their critical nature.
-- Frequency: Use this immediately after creating or updating a hotfix branch to ensure critical fixes are applied across both repositories.
-- Comand
+- **Purpose:** Syncs all hotfix branches.
+- **Use Case:** Use this script when you want to ensure hotfix branches are quickly synced due to their critical nature.
+- **Frequency:** Use this immediately after creating or updating a hotfix branch to ensure critical fixes are applied across both repositories.
+- **Comand**
+```
+./sync_hotfix.sh
 
 ```
-sync_hotfix.sh
-
+**merge_features.sh**
+- **Purpose:** The merge_features.sh script is designed to automate the process of merging all feature branches into the main branch. This script ensures that all the development work done in various feature branches is consolidated into the main branch in a controlled and consistent manner.
+- **USe Case:** At the end of a development cycle, when all features have been developed and tested, this script can be used to merge these feature branches into main.
+- **Frequency:** Run the script whenever you need to merge accumulated feature work into the main branch, such as before significant testing phases or deployments.
+- **Comand**
 ```
-
 ./merge_features.sh
+
+```
+
 
 
 **Advantages of Using Separate Scripts**
-- Modularity: Each script handles a specific task, making the code easier to understand and maintain.
-- Reusability: You can reuse the sync_branch.sh script independently if you need to sync a specific branch manually.
-- Easier Debugging: When issues arise, it's easier to identify and fix problems within a smaller, focused script.
+- **Modularity:** Each script handles a specific task, making the code easier to understand and maintain.
+- **Reusability:** You can reuse the sync_branch.sh script independently if you need to sync a specific branch manually.
+- **Easier Debugging:** When issues arise, it's easier to identify and fix problems within a smaller, focused script.
