@@ -16,10 +16,10 @@ Develop a smart Discord bot designed to assist medical interpreters by providing
 
 ## Requirements
 
-### **Technical Requirements**
+### Technical Requirements
 - Python 3.6+
 
-### **Libraries** 
+### Libraries 
 - **Discord Bot Framework:** discord.py
 - **Database Management:** SQLite, SQLAlchemy for ORM (Optional for enhanced functionality)
 - **Data Manipulation:** pandas
@@ -33,7 +33,7 @@ Develop a smart Discord bot designed to assist medical interpreters by providing
 - **Logging:** logging for detailed log management
 - **Testing:** pytest for unit and integration tests
 
-### **Functional Requirements**
+### Functional Requirements
 - **Natural Language Understanding (NLU):** To provide seamless interaction, the bot will incorporate NLU capabilities to recognize medical terms and context without the need for explicit commands, using advanced NLP frameworks such as spaCy or transformers. This will enable the bot to understand and respond appropriately to user inputs in real-time.
 
 - **User Input Analysis:** The bot will analyze user inputs to identify new medical terms and their definitions. This functionality will be enhanced over time by implementing machine learning models using scikit-learn, ensuring continuous improvement in the accuracy and comprehensiveness of term recognition.
@@ -45,7 +45,7 @@ Develop a smart Discord bot designed to assist medical interpreters by providing
 - **Specialty Prediction:** The bot will include a prediction model to suggest relevant medical specialties based on the definitions of terms provided by users. This model, developed and trained using scikit-learn, will enhance the bot’s ability to provide contextually appropriate information and support specialized medical interpretations.
 
 
-### **Non-Functional Requirements**
+### Non-Functional Requirements
 
 - **User-Friendly Interface:** The design of the bot’s interface will focus on being intuitive and user-friendly, facilitating seamless interaction for users. Special attention will be given to ensuring that the interface is accessible and easy to navigate, accommodating users with varying levels of technical expertise.
 
@@ -55,19 +55,19 @@ Develop a smart Discord bot designed to assist medical interpreters by providing
 
 - **Coding Standards and Best Practices:** Adhering to coding standards and best practices, the bot’s development will focus on maintainable and scalable code. Version control will be implemented using Git to manage code changes effectively, facilitating collaboration and ensuring the reliability of the bot’s functionality.
 
-### **Software Requirements**
+### Software Requirements
 - **Operating System:** Compatible with Windows.
 - **Database:** SQLite for local development, with the option to migrate to a more scalable solution like PostgreSQL or MySQL for production.
 - **Cloud Services:** Optional integration with cloud platforms (e.g., AWS, Google Cloud) for hosting and scaling.
 - **Integrated Development Environment (IDE):** VSCode
 - **API Integration:** Optional integration with external medical databases for real-time updates.
 
-### **Libraries and Frameworks**
+### Libraries and Frameworks
 - **API Documentation:** sphinx for generating project documentation.
 - **CI/CD Tools:** Optional integration with CI/CD tools like Jenkins or GitHub Actions for continuous integration and deployment.
 - **Web Framework:** Flask or FastAPI for developing a web interface (if required).
 
-### **Testing and Quality Assurance**
+### Testing and Quality Assurance
 - **Unit Testing:** Implement unit tests using pytest to ensure individual components function as expected.
 - **Integration Testing:** Develop integration tests to validate the interaction between different components of the bot.
 - **Performance Testing:** Conduct performance tests to ensure the bot can handle multiple queries simultaneously without degradation in performance.
@@ -145,7 +145,8 @@ This layer interacts with users through the Discord platform. It handles user in
 
 **Application Layer**
 This layer contains the core logic of the bot, including Natural Language Understanding (NLU), generative AI capabilities, user input analysis, and specialty prediction.
--Subcomponents include
+
+**Subcomponents include**
 - **NLU Component:** Handles the understanding of user queries using spaCy or transformers.
 - **Generative AI Component:** Generates definitions and explanations using transformers.
 - **Prediction Component:** Suggests medical specialties based on user queries using scikit-learn.
@@ -467,8 +468,7 @@ def get_term(term):
 ```
 
 ## Plan for development 
-We are going to use a transformative approach inspired by the Yin-Yang concept, structuring the development in cycles of pre-co-requisite programming blocks, moving from the simplest to the most complex. 
-For doing this we will be structuring the development in cycles and using Git branches, we can ensure that each phase is developed and tested independently before being merged into the main branch. This approach minimizes redundancy, ensures continuous integration, and facilitates incremental improvements. Each cycle builds upon the previous one, resulting in a robust, scalable, and user-friendly Medical Interpreter Bot.
+We are going to use a transformative approach inspired by the Yin-Yang concept, structuring the development in cycles of pre-co-requisite programming blocks, moving from the simplest to the most complex. For doing this we will be structuring the development in cycles and using Git branches, we can ensure that each phase is developed and tested independently before being merged into the main branch. This approach minimizes redundancy, ensures continuous integration, and facilitates incremental improvements. Each cycle builds upon the previous one, resulting in a robust, scalable, and user-friendly Medical Interpreter Bot.
 
 **Why Use Branches?**
 - **Isolation:** Branches allow you to work on features or fixes in isolation from the main codebase.
@@ -500,9 +500,9 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Set up schemas and basic CRUD operations.
 
 **Final Product**
-- Basic Discord Bot: A functional Discord bot that can handle basic commands and interactions.
-- Database Setup: An SQLite database initialized with a basic schema for storing medical terms and definitions.
-- Basic Command Handling: The bot can respond to simple user queries with predefined responses.
+- **Basic Discord Bot:** A functional Discord bot that can handle basic commands and interactions.
+- **Database Setup:** An SQLite database initialized with a basic schema for storing medical terms and definitions.
+- **Basic Command Handling:** The bot can respond to simple user queries with predefined responses.
 
 **Foundation and Basic Features | Beta Prototype 1.2: Basic Term and Definition Management**
 
@@ -525,11 +525,11 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Conduct initial user testing for feedback on input and basic functionalities.
 
 **Final Product**
-- NLU Integration: The bot can recognize basic medical terms using spaCy or transformers.
-- User Input Analysis: The bot can analyze user inputs to identify new terms and update the database.
-- Basic Testing and Feedback: Initial unit tests for core functionalities and user feedback gathered to improve input handling.
+- **NLU Integration:** The bot can recognize basic medical terms using spaCy or transformers.
+- **User Input Analysis:** The bot can analyze user inputs to identify new terms and update the database.
+- **Basic Testing and Feedback:** Initial unit tests for core functionalities and user feedback gathered to improve input handling.
 
-**Core Functionality and Setup**
+**Core Functionality and Setup Branch**
 **Branch:** feature/cycle-1-setup
 **Sub-branches:**
 - feature/bot-initialization
@@ -555,9 +555,9 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Implement user-friendly features for better interaction.
 
 **Final Product**
-- Advanced NLU Capabilities: Improved NLU model that can handle more complex queries and provide context-aware suggestions.
-- Enhanced User Interface: Better user interaction within Discord, making it easier to query and receive definitions.
-- Automated Updates: Basic scripts for automated updates to the database with new terms and definitions.
+- **Advanced NLU Capabilities:** Improved NLU model that can handle more complex queries and provide context-aware suggestions.
+- **Enhanced User Interface:** Better user interaction within Discord, making it easier to query and receive definitions.
+- **Automated Updates:** Basic scripts for automated updates to the database with new terms and definitions.
 
 **Advanced Features and NLU Integration | Beta Prototype 2.2: Generative AI Capabilities**
 
@@ -584,7 +584,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Enhanced Database Management: Efficient and reliable database operations with automated updates.
 - Advanced Testing and User Feedback: Integration tests for new functionalities and broader user feedback gathered to refine features.
 
-**Advanced Natural Language Understanding (NLU)**
+**Advanced Natural Language Understanding (NLU) Branch**
 **Branch:** feature/cycle-2-nlu
 **Sub-branches**
 - feature/nlu-integration
@@ -609,9 +609,9 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Provide clear and concise responses.
 
 **Final Product**
-- Specialty Prediction: The bot can suggest relevant medical specialties based on user queries using a trained scikit-learn model.
-- Improved User Experience: More intuitive and consistent interactions, providing clear and concise responses.
-- Security Enhancements: Initial implementation of security measures for data handling and storage.
+- **Specialty Prediction:** The bot can suggest relevant medical specialties based on user queries using a trained scikit-learn model.
+- **Improved User Experience:** More intuitive and consistent interactions, providing clear and concise responses.
+- **Security Enhancements:** Initial implementation of security measures for data handling and storage.
 
 **Specialty Prediction and User Experience Enhancements | Beta Prototype 3.2: Enhanced User Experience and Security**
 
@@ -634,11 +634,11 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Implement final adjustments based on testing results and user feedback.
 
 **Final Product**
-- Comprehensive Security Measures: Robust security protocols for data protection and compliance with relevant regulations.
-- Optimized Performance: The bot can handle multiple queries simultaneously without performance degradation.
-- Comprehensive Testing: Thorough testing of all features, including performance and security.
+- **Comprehensive Security Measures:** Robust security protocols for data protection and compliance with relevant regulations.
+- **Optimized Performance:** The bot can handle multiple queries simultaneously without performance degradation.
+- **Comprehensive Testing:** Thorough testing of all features, including performance and security.
 
-**Generative AI and Machine Learning Enhancements**
+**Generative AI and Machine Learning Enhancements Branch**
 **Branch:** feature/cycle-3-ml-ai
 **Sub-branches:**
 - feature/ml-models
@@ -663,9 +663,9 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Ensure all code is well-documented with clear comments and docstrings.
 
 **Final Product**
-- Thoroughly Tested Product: Comprehensive unit and integration tests ensuring all features work as expected.
-- Comprehensive Documentation: Detailed documentation including setup guides, user manuals, and developer notes.
-- Final Adjustments: Implemented changes based on testing results and user feedback.
+- **Thoroughly Tested Product:** Comprehensive unit and integration tests ensuring all features work as expected.
+- **Comprehensive Documentation:** Detailed documentation including setup guides, user manuals, and developer notes.
+- **Final Adjustments:** Implemented changes based on testing results and user feedback.
 
 **Comprehensive Testing and Finalization | Beta Prototype 4.2: Finalization and Deployment**
 
@@ -688,11 +688,11 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Identify potential opportunities for further enhancements or new features.
 
 **Final Product**
-- Market-Ready Bot: Fully functional and optimized bot ready for deployment to a production environment.
-- Market Launch: The bot is officially launched to the target market, and user adoption is monitored.
-- Market Validation: Initial analysis of user adoption and feedback to assess market viability and plan for future improvements.
+- **Market-Ready Bot:** Fully functional and optimized bot ready for deployment to a production environment.
+- **Market Launch:** The bot is officially launched to the target market, and user adoption is monitored.
+- **Market Validation:** Initial analysis of user adoption and feedback to assess market viability and plan for future improvements.
 
-**User Experience and Expansion**
+**User Experience and Expansion Branch**
 **Branch:** feature/cycle-4-user-experience
 **Sub-branches:**
 - feature/user-friendly-interface
