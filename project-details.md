@@ -746,4 +746,36 @@ MEDICAL-INTERPRETER-BOT/
 
 
 ## Git
-Git Run Commit script: ./sync_repos.sh
+
+- sync_repos.sh: Use for full repository syncs.
+- sync_branch.sh: Use for syncing individual branches.
+- sync_feature.sh: (Optional) Use for syncing all feature branches.
+- sync_hotfix.sh: (Optional) Use for syncing all hotfix branches.
+
+The provided scripts incorporate good practices, including error handling, debugging output, and clear messaging.
+
+**When to Use Each Script**
+
+1. sync_repos.sh:
+- Purpose: Orchestrates the syncing of all branches listed in the script.
+- Use Case: Run this script when you want to perform a full sync of all relevant branches (main, develop, feature branches, etc.) between GitHub and GitLab.
+- Frequency: Use this regularly, such as at the end of each development cycle or before major releases.
+- Comand
+
+2. sync_branch.sh:
+- Purpose: Syncs a single specified branch.
+- Use Case: Use this script when you need to sync a specific branch, for example, if you’ve made changes to one particular branch and want to ensure it’s up-to-date across both repositories.
+- Frequency: Use as needed, particularly when working on or updating specific branches.
+- Comand
+
+3. sync_feature.sh: 
+- Purpose: Syncs all feature branches.
+- Use Case: Use this script when you want to focus on syncing all your feature branches separately from main and develop branches.
+- Frequency: Use this periodically, especially during active feature development.
+- Comand
+
+4. sync_hotfix.sh: 
+- Purpose: Syncs all hotfix branches.
+- Use Case: Use this script when you want to ensure hotfix branches are quickly synced due to their critical nature.
+- Frequency: Use this immediately after creating or updating a hotfix branch to ensure critical fixes are applied across both repositories.
+- Comand
