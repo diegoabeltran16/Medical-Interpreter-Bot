@@ -13,7 +13,7 @@ fi
 
 # Checkout the branch
 echo "Checking out branch $branch..."
-git checkout "$branch" || { echo "Failed to checkout branch $branch"; exit 1; }
+git checkout -b $branch main || git checkout $branch
 
 # Merge changes from GitHub to GitLab
 echo "Merging changes from GitHub to GitLab for branch $branch..."

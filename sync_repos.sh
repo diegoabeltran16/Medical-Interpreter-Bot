@@ -60,14 +60,15 @@ if ! git diff-index --quiet HEAD --; then
   git commit -m "Automated commit by sync script"
 fi
 
-# Branches to create and push
-branches=("feature/cycle-1-setup" "feature/bot-initialization" "feature/database-setup" "feature/basic-term-lookup" "feature/env-configuration")
+# Define default branches to create and push if no specific branches are provided
+default_branches=("feature/cycle-1-setup" "feature/bot-initialization" "feature/database-setup" "feature/basic-term-lookup" "feature/env-configuration")
+
+# Use provided branches or default branches if none are provided
+branches=("${@:-${default_branches[@]}}")
 
 # Create and push branches
 for branch in "${branches[@]}"; do
-  git checkout -b $branch main || git checkout $branch
-  git push -u github $branch
-  git push -u gitlab $branch
+  ./sync_branch.sh "$branch"
 done
 
 # Merge changes from GitHub to GitLab

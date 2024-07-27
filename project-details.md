@@ -794,14 +794,22 @@ The provided scripts incorporate good practices, including error handling, debug
 
 ### **When to Use Each Script**
 **sync_repos.sh**
-- **Purpose:** Orchestrates the syncing of all branches listed in the script.
-- **Use Case:** Run this script when you want to perform a full sync of all relevant branches (main, develop, feature branches, etc.) between GitHub and GitLab.
-- **Frequency:** Use this regularly, such as at the end of each development cycle or before major releases.
-- **Comand:**
+1. For updating all default branches
+Run the sync_repos.sh script without any arguments to update all default branches:
+
 ```
 ./sync_repos.sh
 
 ```
+
+2. For updating specific branches:
+Pass the branch names as arguments to the sync_repos.sh script to update specific branches:
+
+```
+./sync_repos.sh feature/bot-initialization feature/database-setup
+
+```
+
 **sync_branch.sh**
 - **Purpose:** Syncs a single specified branch.
 - **Use Case:** Use this script when you need to sync a specific branch, for example, if you’ve made changes to one particular branch and want to ensure it’s up-to-date across both repositories.
