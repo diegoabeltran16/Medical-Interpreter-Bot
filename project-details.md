@@ -477,8 +477,9 @@ We are going to use a transformative approach inspired by the Yin-Yang concept, 
 
 Here’s a structured development plan divided into Alpha and Beta prototypes, each building upon the previous cycle.
 
-### Cycle 1
-**Foundation and Basic Features | Alpha Prototype 1.1: Initial Setup and Basic Input**
+### Cycle 1 : Foundation and Basic Features
+
+**Alpha Prototype 1.1: Initial Setup and Basic Input**
 **Tasks**
 - Set up the development environment.
 - Create a basic Python project structure.
@@ -504,7 +505,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **Database Setup:** An SQLite database initialized with a basic schema for storing medical terms and definitions.
 - **Basic Command Handling:** The bot can respond to simple user queries with predefined responses.
 
-**Foundation and Basic Features | Beta Prototype 1.2: Basic Term and Definition Management**
+**Beta Prototype 1.2: Basic Term and Definition Management**
 
 **Tasks**
 - Extend querying functionality to include English-Spanish translations.
@@ -529,7 +530,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **User Input Analysis:** The bot can analyze user inputs to identify new terms and update the database.
 - **Basic Testing and Feedback:** Initial unit tests for core functionalities and user feedback gathered to improve input handling.
 
-**Core Functionality and Setup Branch**
+**Core Functionality and Setup Branch for the cycle 1**
 **Branch:** feature/cycle-1-setup
 **Sub-branches:**
 - feature/bot-initialization
@@ -537,9 +538,9 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - feature/basic-term-lookup
 - feature/env-configuration
 
-### Cycle 2
-**Advanced Features and NLU Integration | Alpha Prototype 2.1: Advanced NLU and User Input Analysis**
+### Cycle 2: Advanced Features and NLU Integration 
 
+**Alpha Prototype 2.1: Advanced NLU and User Input Analysis**
 **Tasks**
 - Implement spaCy for advanced natural language understanding (NLU).
 - Develop functions for recognizing terms and context without explicit commands.
@@ -559,8 +560,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **Enhanced User Interface:** Better user interaction within Discord, making it easier to query and receive definitions.
 - **Automated Updates:** Basic scripts for automated updates to the database with new terms and definitions.
 
-**Advanced Features and NLU Integration | Beta Prototype 2.2: Generative AI Capabilities**
-
+**Beta Prototype 2.2: Generative AI Capabilities**
 **Tasks**
 - Implement transformers for generating definitions and explanations.
 - Fine-tune models to ensure relevance to the medical domain.
@@ -580,20 +580,20 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - Gather feedback from a broader user base to identify areas for improvement.
 
 **Final Product**
-- Generative AI Integration: The bot can generate detailed definitions and explanations for medical terms using transformers.
-- Enhanced Database Management: Efficient and reliable database operations with automated updates.
-- Advanced Testing and User Feedback: Integration tests for new functionalities and broader user feedback gathered to refine features.
+- **Generative AI Integration:** The bot can generate detailed definitions and explanations for medical terms using transformers.
+- **Enhanced Database Management:** Efficient and reliable database operations with automated updates.
+- **Advanced Testing and User Feedback:** Integration tests for new functionalities and broader user feedback gathered to refine features.
 
-**Advanced Natural Language Understanding (NLU) Branch**
+**Advanced Natural Language Understanding (NLU) Branch | Cycle 2**
 **Branch:** feature/cycle-2-nlu
 **Sub-branches**
 - feature/nlu-integration
 - feature/data-manipulation
 - feature/specialty-specific-terms
 
-### Cycle 3
-**Specialty Prediction and User Experience Enhancements | Alpha Prototype 3.1: Specialty Prediction Model**
+### Cycle 3: Specialty Prediction and User Experience Enhancements 
 
+**Alpha Prototype 3.1: Specialty Prediction Model**
 **Tasks**
 - Develop and train models using scikit-learn to predict relevant medical specialties based on user queries.
 - Implement functions for suggesting specialties.
@@ -613,8 +613,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **Improved User Experience:** More intuitive and consistent interactions, providing clear and concise responses.
 - **Security Enhancements:** Initial implementation of security measures for data handling and storage.
 
-**Specialty Prediction and User Experience Enhancements | Beta Prototype 3.2: Enhanced User Experience and Security**
-
+**Beta Prototype 3.2: Enhanced User Experience and Security**
 **Tasks**
 - Design intuitive and consistent interactions within Discord.
 - Provide clear and concise responses.
@@ -638,16 +637,16 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **Optimized Performance:** The bot can handle multiple queries simultaneously without performance degradation.
 - **Comprehensive Testing:** Thorough testing of all features, including performance and security.
 
-**Generative AI and Machine Learning Enhancements Branch**
+**Generative AI and Machine Learning Enhancements Branch for cylce 3**
 **Branch:** feature/cycle-3-ml-ai
 **Sub-branches:**
 - feature/ml-models
 - feature/generative-ai
 - feature/automatic-analysis
 
-## Cycle 4
-**Comprehensive Testing and Finalization | Alpha Prototype 4.1: Comprehensive Testing**
+## Cycle 4: Comprehensive Testing and Finalization
 
+**Alpha Prototype 4.1: Comprehensive Testing**
 **Tasks**
 - Conduct thorough testing of all features (unit tests, integration tests).
 - Ensure compatibility across different devices and operating systems.
@@ -667,8 +666,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **Comprehensive Documentation:** Detailed documentation including setup guides, user manuals, and developer notes.
 - **Final Adjustments:** Implemented changes based on testing results and user feedback.
 
-**Comprehensive Testing and Finalization | Beta Prototype 4.2: Finalization and Deployment**
-
+**Beta Prototype 4.2: Finalization and Deployment**
 **Tasks**
 - Finalize UI/UX based on comprehensive feedback.
 - Ensure security measures are in place (authentication, data protection).
@@ -692,7 +690,7 @@ Here’s a structured development plan divided into Alpha and Beta prototypes, e
 - **Market Launch:** The bot is officially launched to the target market, and user adoption is monitored.
 - **Market Validation:** Initial analysis of user adoption and feedback to assess market viability and plan for future improvements.
 
-**User Experience and Expansion Branch**
+**User Experience and Expansion Branch for cycle 4**
 **Branch:** feature/cycle-4-user-experience
 **Sub-branches:**
 - feature/user-friendly-interface
