@@ -60,6 +60,16 @@ if ! git diff-index --quiet HEAD --; then
   git commit -m "Automated commit by sync script"
 fi
 
+# Branches to create and push
+branches=("feature/cycle-1-setup" "feature/bot-initialization" "feature/database-setup" "feature/basic-term-lookup" "feature/env-configuration")
+
+# Create and push branches
+for branch in "${branches[@]}"; do
+  git checkout -b $branch main || git checkout $branch
+  git push -u github $branch
+  git push -u gitlab $branch
+done
+
 # Merge changes from GitHub to GitLab
 echo "Merging changes from GitHub to GitLab..."
 git checkout main
